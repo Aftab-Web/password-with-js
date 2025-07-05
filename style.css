@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .main{
     width: 1000px;
@@ -67,4 +68,30 @@ input{
 }
 .generate div:hover{
     background-color: green;
+}
+@media screen and (max-width: 1000px){
+    .main{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .generate{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .generate div{
+        width: 90%;
+    }
+    .adjust{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 420px){
+    .main{
+        margin-top: 0;
+    }
+    .generate div{
+        font-size: 20px;
+    }
 }
